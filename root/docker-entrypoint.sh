@@ -6,7 +6,7 @@ export PROXY_READ_TIMEOUT=${PROXY_READ_TIMEOUT:-240}
 envsubst "$(printf '${%s} ' $(bash -c "compgen -A variable"))" < /templates/all.template > /run/default.conf
 
 # RegEx
-REGEX="^(/v[\\d\\.]+)?(/\\w+)?"
+REGEX="^(/v[\\\d\\\.]+)?(/\\\w+)?"
 sed -i "s|#!REGEX|${REGEX}|g" /run/default.conf
 
 # IPv6
