@@ -5,3 +5,6 @@ FROM lscr.io/linuxserver/socket-proxy:latest
 
 # Add local files
 COPY root/ /
+
+# Permissions (this is somehow needed for Podman)
+RUN chmod +x /docker-entrypoint.sh

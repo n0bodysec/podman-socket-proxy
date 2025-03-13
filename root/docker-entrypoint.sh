@@ -25,7 +25,7 @@ mkdir /run/nginx-tmp
 
 echo '
 ──────────────────────────────────────────────
-Based on the image provided by linuxserver.io 
+Based on the image provided by linuxserver.io
 ──────────────────────────────────────────────
 
 To support LSIO projects visit:

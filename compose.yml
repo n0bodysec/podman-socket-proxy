@@ -1,7 +1,7 @@
 services:
   socket-proxy:
     build: .
-    # image: lscr.io/linuxserver/socket-proxy:latest
+    # image: localhost/socket-proxy
     container_name: socket-proxy
     restart: unless-stopped
 
